@@ -1,0 +1,65 @@
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+      body {
+        background-color: rgb(54, 24, 227);
+        margin: 0 auto;
+        display: -ms-flexbox;
+        display: -webkit-flex;  
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      #bp-web-widget-container {
+        max-height: 90%;
+        width: 480px;
+        margin: auto;
+        flex-grow: 1;
+      }
+      #bp-web-widget-container div {
+        height: 100%;
+      }
+      .webchatIframe {
+        position: relative !important;
+      }
+      @media only screen and (orientation: portrait),
+        only screen and (orientation: landscape) and (max-width: 900px) {
+        #bp-web-widget-container {
+          width: 100%;
+          height: 100%;
+          max-height: 100%;
+        }
+      }
+    </style>
+    <title>Alex</title>
+  </head>
+  <body>
+
+  <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with Alex",
+      "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+      "botId": "919fcff3-43bb-4a74-aba8-3a3169f15f18",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "919fcff3-43bb-4a74-aba8-3a3169f15f18",
+      "botName": "Alex",
+      "useSessionStorage": true,
+      "hideWidget": true,
+      "disableAnimations": true,
+      "closeOnEscape": false,
+      "showConversationsButton": false,
+      "enableTranscriptDownload": false,
+      "stylesheet": "https://cdn.botpress.cloud/webchat/v0/themes/shareable.css",
+      "className": "webchatIframe",
+      "containerWidth": "100%25",
+      "layoutWidth": "100%25",
+      "showCloseButton": false
+  });
+window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+</script>
+
+  </body>
+</html>
