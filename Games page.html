@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Games</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color:cadetblue;
+  padding: 10px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  background-color:rgb(223, 120, 83);
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+ <marquee><i><p style ="font-size:20px">Website by Shaurya Mehta 9-D</p></i></marquee>
+ <img height="400px" width="400px"  src= "https://media2.giphy.com/media/g3ZlHx1iqhCOCcY3p2/giphy.gif">
+ <center><h1 style="font-family:'Brush Script MT',cursive; color: #333;">Games on health and nutrition</h1></center>
+</div>
+
+<div id="navbar">
+  <a href="https://shaurocks.github.io/Home%20page.html">Home</a>
+  <a href="https://shaurocks.github.io/Home%20page.html">Health</a>
+  <a href="https://shaurocks.github.io/Home%20page.html">Nutrition</a>
+  <a href="https://shaurocks.github.io/Ikigai%20Page.html">Ikigai</a>
+  <a href="https://shaurocks.github.io/A.I.%20page.html">Health Mate</a>
+  <a class="active" href="https://shaurocks.github.io/Games%20page.html">Games</a>
+  <a href="https://shaurocks.github.io/About%20page.html">About</a>
+</div>
+
+<div class="content">
+  <h3><B><I>Games on Nutrition</I></B></h3><br>
+  <ol><li>Pira Game by ffred on scratch <br><p>It is a simple drag and drop game on nutrition tower</p></li>
+  <center><iframe src="https://turbowarp.org/328033/embed?addons=pause,gamepad,mute-project" width="499" height="416" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen = "true " style="border: #333; border-style:double;"></iframe></center>
+  <br><br><li>Fruit Salad by Poppin_candy_4 on scratch</li><br><p>Use arrow keys left and right to move the basket and collect the falling fruits.<br>
+  Collect 50 or more fruits in 30 seconds to make a fruit salad!!^^</p>
+  <center><iframe src="https://turbowarp.org/237523696/embed?addons=pause,gamepad,mute-project" width="499" height="416" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen = "true " style="border: #333; border-style:double;"></iframe></center>
+  <br><br><li>Lemenoid by Poppin_candy_4 on scratch</li><br><p>Use wsad keys to move and cursor to shoot avoid and destroy lemons<br>
+  A limitless survival game</p></ol>
+  <center><iframe src="https://turbowarp.org/889326294/embed?addons=pause,gamepad,mute-project" width="499" height="416" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen = "true " style="border: #333; border-style:double;"></iframe></center>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
