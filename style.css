@@ -1,0 +1,142 @@
+/*neon lighting*/
+#lightpath
+{
+    position: fixed;
+    top: 0;
+    width: 7.5px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+#ambientlight
+{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 7.5px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+}
+#ambientlight::before,
+#ambientlight::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+#ambientlight::after
+{
+    filter: blur(30px);
+}
+@keyframes animate 
+{
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+/*BODY STYLES*/
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: cadetblue;
+    padding: 30px;
+    text-align: center;
+}
+
+
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.content {
+    background-color:rgb(246, 148, 113);
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/*BACK TO TOP BUTTON*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #dc143c;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+	color: #fff;
+	font-size: 3rem;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+	background-color: #be1a3b;
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
+}
+::-webkit-scrollbar
+{
+    width: 0%;
+}
