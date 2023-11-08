@@ -1,157 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home page</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+	<link rel="stylesheet" href="main.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
 
-body {
-  margin: 0;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  body {
+    margin: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: cadetblue;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
+  .header {
+    background-color: cadetblue;
+    padding: 30px;
+    text-align: center;
+  }
 
-#myBtn:hover {
-  background-color: #555;
-}
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
 
-.header {
-  background-color:cadetblue;
-  padding: 10px;
-  text-align: center;
-}
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
 
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-}
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+  #navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
 
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
+  .content {
+    background-color:rgb(246, 148, 113);
+    padding: 16px;
+  }
 
-#navbar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
-.content {
-  background-color:rgb(246, 148, 113);
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-</style>
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  </style>
 </head>
 <body>
+  <div class="header">
+    <marquee><i><p style ="font-size:20px">Website by Shaurya Mehta 9-D</p></i></marquee>
+    <img height="400px" width="650px"  src= "https://i.pinimg.com/originals/9d/7a/d1/9d7ad1eaa2948a05bd1a8a6412f3a753.gif">
+    <center><h1 style="font-family:'Brush Script MT',cursive; color: #333;">Home page</h1></center>
+  </div>
 
-<div class="header">
- <marquee><i><p style ="font-size:20px">Website by Shaurya Mehta 9-D</p></i></marquee>
- <img height="400px" width="650px"  src= "https://i.pinimg.com/originals/9d/7a/d1/9d7ad1eaa2948a05bd1a8a6412f3a753.gif">
-  <center><h1 style="font-family:'Brush Script MT',cursive; color: #333;">Home page</h1></center>
-</div>
+  <div id="navbar">
+    <a class="active" href="javascript:void(0)">Home</a>
+    <a href="https://shaurocks.github.io/Health%20page.html">Health</a>
+    <a href="https://shaurocks.github.io/Nutrition%20page.html">Nutrition</a>
+    <a href="https://shaurocks.github.io/Ikigai%20Page.html">Ikigai</a>
+    <a href="javascript:void(0)">Health Mate</a>
+    <a href="https://shaurocks.github.io/Games%20page.html">Games</a>
+    <a href="https://shaurocks.github.io/About%20page.html">About</a>
+  </div>
 
-<div id="navbar">
-  <a class="active" href="javascript:void(0)">Home</a>
-  <a href="https://shaurocks.github.io/Health%20page.html">Health</a>
-  <a href="https://shaurocks.github.io/Nutrition%20page.html">Nutrition</a>
-  <a href="https://shaurocks.github.io/Ikigai%20Page.html">Ikigai</a>
-  <a href="javascript:void(0)">Health Mate</a>
-  <a href="https://shaurocks.github.io/Games%20page.html">Games</a>
-  <a href="https://shaurocks.github.io/About%20page.html">About</a>
-</div>
+  <div class="content">
+    <h4>Nutrition is a basic human need and a prerequisite for healthy life.
+    <br>A proper diet is essential from very early age of life for growth, development and active life. 
+    <br>Nutrition is the science that deals with all the various factors of which food is composed and the way in which proper nourishment is brought about.
+    <br> <center><img height="450px" width="450px"  src= "https://i.gifer.com/embedded/download/2mwF.gif"></center><br>
+    Importance of health and Nutrition :-<br>A healthy diet is essential for good health and nutrition.
+    It protects you against many chronic noncommunicable diseases, such as heart disease, diabetes and cancer.<br>
+    Eating a variety of foods and consuming less salt, sugars and saturated and<br> industrially-produced trans-fats, are essential for healthy diet.<br></h4>
 
-<div class="content">
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top <i class="fa fa-arrow-up"></i></button>
-  <h4>Nutrition is a basic human need and a prerequisite for healthy life.
-  <br>A proper diet is essential from very early age of life for growth, development and active life. 
-  <br>Nutrition is the science that deals with all the various factors of which food is composed and the way in which proper nourishment is brought about.
-  <br> <center><img height="450px" width="450px"  src= "https://i.gifer.com/embedded/download/2mwF.gif"></center><br>
-  <b>Importance of health and Nutrition :-</b><br>A healthy diet is essential for good health and nutrition.
-  It protects you against many chronic noncommunicable diseases, such as heart disease, diabetes and cancer.<br>
-  Eating a variety of foods and consuming less salt, sugars and saturated and<br> industrially-produced trans-fats, are essential for healthy diet.<br></h4>
+    <center><img src = "https://media0.giphy.com/media/9YHyAZWjBZY8o/giphy.gif"></center><br>
+    <h4>Ikigai can describe having a sense of purpose in life, as well as being motivated.<BR><br><b>What does ikigai mean?</b>
+    <br> Ikigai is a Japanese concept that means your 'reason for being' . 'Iki' in Japanese means 'life' ,
+    <br> and 'gai' describes value or worth. Your ikigai is your life purpose or your bliss.</h4>
 
-  <center><img src = "https://media0.giphy.com/media/9YHyAZWjBZY8o/giphy.gif"></center><br>
-  <h4>Ikigai can describe having a sense of purpose in life, as well as being motivated.<BR><br><b>What does ikigai mean?</b>
-  <br> Ikigai is a Japanese concept that means your 'reason for being' . 'Iki' in Japanese means 'life' ,
-  <br> and 'gai' describes value or worth. Your ikigai is your life purpose or your bliss.</h4>
-
-  <center><br><img height ="450px" width="450px" src = "https://iikigaibyalee.com/wp-content/uploads/2021/07/whatisiikigaii.gif"></center>
-  
-  <br><h4>Go to the next web page to learn more about health</h4>
+    <center><br><img height ="450px" width="450px" src = "https://iikigaibyalee.com/wp-content/uploads/2021/07/whatisiikigaii.gif"></center>
+    
+    <br><h4>Go to the next web page to learn more about health</h4>
+    <!-- BACK TO TOP BUTTON -->
+	  <a href="#" class="back-to-top">
+		  <span class="material-icons">arrow_upward</span>
+	  </a>
    
-</div>
+  </div>
+  <script>
+  window.onscroll = function() {myFunction()};
 
-<script>
-window.onscroll = function() {myFunction()};
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
   }
-}
-
-// Get the button
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 160px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
+  </script>
 </body>
 </html>
